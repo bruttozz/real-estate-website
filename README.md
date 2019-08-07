@@ -1,6 +1,6 @@
-# Fullstack
+# Project Overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+This project is aimed to set up a website which is facing to the international students who want to find a good house to stay without wasting a lot of time search online or paying unreasonable service fees. I used Node.js to develop the back-end, Angular 8 as the front-end framework,  MongoDB as the database and Express.js as the intermediate connection.
 
 ## Development server
 
