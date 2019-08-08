@@ -4,6 +4,9 @@ This project is aimed to set up a website which is facing to the international s
 
 ## Development server
 
+I will register a domain for this project, after that I will deploy it so everyone will get the access to it.
+Right now it is a beta version.
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
