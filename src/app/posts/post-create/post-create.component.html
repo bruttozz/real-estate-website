@@ -1,5 +1,6 @@
 <h2>One of the component shows here</h2>
-<textarea rows="7"></textarea>
-<button (click)="onAddPost()">Update Information</button>
+<textarea rows="7" [value]="newPost" #postInput></textarea>
+<hr>
+<button (click)="onAddPost(postInput)">Update Information</button>
 <br>
 <p>{{ newPost }}</p>
