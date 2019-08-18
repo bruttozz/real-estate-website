@@ -1,6 +1,17 @@
+
+
+<mat-card>
+  <mat-form-field>
+    <textarea matInput rows="5" [(ngModel)]="inputText" ></textarea>
+  </mat-form-field>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="onAddPost()">Update Information</button>
+</mat-card>
+
+
 <h2>One of the component shows here</h2>
-<textarea rows="7" [value]="newPost" #postInput></textarea>
+<!--<textarea rows="7" [(ngModel)]="inputText" ></textarea>-->
 <hr>
-<button (click)="onAddPost(postInput)">Update Information</button>
-<br>
 <p>{{ newPost }}</p>
