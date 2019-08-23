@@ -1,10 +1,9 @@
-<mat-accordion>
-  <mat-expansion-panel>
+<mat-accordion multi="true" *ngIf="array.length > 0">
+  <mat-expansion-panel *ngFor="let person of array">
     <mat-expansion-panel-header>
       Please choose your status
     </mat-expansion-panel-header>
-    Student
-    Landlord
-    Agency
+    <p>{{ person.title }}</p>
   </mat-expansion-panel>
 </mat-accordion>
+<p class="info-text" *ngIf="array.length == 0">Nothing here</p>
