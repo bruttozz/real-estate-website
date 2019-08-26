@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fullstack';
-  posts = [];
+  storedPosts = [];
 
   onPostAdded(post) {
-    this.posts.push(post);
+    this.storedPosts.push(post);
   }
 }
