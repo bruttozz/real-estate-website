@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { PostsService } from './posts/posts.service';
 import {
   MatInputModule,
   MatCardModule,
@@ -33,7 +34,7 @@ import {PostListComponent} from './posts/post-list/post-list.component';
     MatToolbarModule,
     MatExpansionModule
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
