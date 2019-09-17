@@ -1,9 +1,10 @@
 <mat-accordion multi="true" *ngIf="posts.length > 0">
   <mat-expansion-panel *ngFor="let person of posts">
     <mat-expansion-panel-header>
-      Please choose your status
+<!--      Please choose your status-->
+      <p>{{ person.title }}
     </mat-expansion-panel-header>
-    <p>{{ person.title }}</p>
+    <p>{{ person.content }}</p>
   </mat-expansion-panel>
 </mat-accordion>
 <p class="info-text" *ngIf="posts.length == 0">Nothing here</p>
