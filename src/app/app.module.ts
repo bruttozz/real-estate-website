@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { PostsService } from './posts/posts.service';
+import { HttpClientModule } from '@angular/common/http';
 import {
   MatInputModule,
   MatCardModule,
@@ -28,6 +29,7 @@ import {PostListComponent} from './posts/post-list/post-list.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     MatInputModule,
     MatCardModule,
     MatButtonModule,
