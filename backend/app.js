@@ -43,8 +43,4 @@ app.use("/api/posts", (req, res, next) => {
   });
 });
 
-// app.use((req, res, next) => {
-//   res.send("Hello from express");
-// })
-
 module.exports = app;
