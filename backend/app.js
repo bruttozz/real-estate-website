@@ -2,10 +2,49 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const mongo = require('mongodb');
+const assert = require('assert');
 
 const PostModel = require('./models/post');
 
 const app = express();
+const router = express.Router();
+
+// var url = 'mongodb://localhost:27017/test';
+//
+// router.get('/', function (req, res, next) {
+//   res.render('index');
+// });
+//
+// router.get('/get-data', function (req, res, next) {
+//   var resultArray = [];
+//   mongo.connect(url, function (err, db) {
+//     assert.equal(null, err);
+//     var cursor = db.collection('user-data').find();
+//     cursor.forEach(function(doc, err) {
+//       resultArray.push(doc);
+//     }, function doSth() {
+//       db.close();
+//       res.render('index', {items: resultArray});
+//     });
+//   })
+// });
+//
+// router.post('/insert', function (req, res, next) {
+//   var item = {
+//     title: req.body.title,
+//     content: req.body.content
+//   };
+//
+//   mongo.connect(url, function (err, db) {
+//     assert.equal(null, err);
+//     db.collection('user-data').insertOne(item, function (err, result) {
+//       assert.equal(null, error);
+//       console.log('Item Inserted');
+//       db.close();
+//     });
+//   });
+//
+// });
 
 mongoose.connect("mongodb+srv://test:lclc0610@bruttocluster-p4qft.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
